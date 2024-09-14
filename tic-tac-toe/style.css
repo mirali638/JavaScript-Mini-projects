@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.2s ease-in-out;
+}
+body {
+  background-color: #95a3a4;
+  text-align: center;
+}
+h1 {
+  font-size: 8vmin;
+  color: #95a3a4;
+  background-color: #4e5340;
+}
+h2 {
+  color: #e2e8dd;
+}
+.turn-container {
+  height: 10vmin;
+  width: 15vmin;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
+}
+.turn-container h3 {
+  margin: 0;
+  height: 2vmin;
+  font-size: 4vmin;
+  width: 15vmin;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: #4e5340;
+}
+.turn-container .turn-box {
+  border: 3px solid #4e5340;
+  font-size: 3vmin;
+  font-weight: 700;
+  display: inline-block;
+
+  transition: background-color 0.3s ease;
+}
+.turn-box.current-turn {
+  background-color: #5b6363;
+}
+.turn-container .turn-box:nth-child(even) {
+  border-right: none;
+}
+.align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 7.5vmin;
+  height: 5vmin;
+  background-color: #95a3a4;
+  z-index: -1;
+}
+.winning-box {
+  animation: highlightAnimation 0.5s ease-in-out infinite alternate;
+}
+@keyframes highlightAnimation {
+  from {
+    background-color: #5b6363;
+  }
+  to {
+    background-color: #848f8f;
+  }
+}
+.container {
+  height: 65vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.game {
+  height: 48vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  background-color: #95a3a4;
+  height: 18vmin;
+  width: 18vmin;
+
+  border: 4px solid #4e5340;
+  font-size: 8vmin;
+  color: #313531;
+}
+.text {
+  font-size: 8vmin;
+}
+#reset-btn {
+  padding: 1rem;
+  font-size: 1.3rem;
+  background-color: #4e5340;
+  border-radius: 1rem;
+  border: none;
+  color: #e2e8dd;
+}
+#new-btn {
+  padding: 1rem;
+  font-size: 1.3rem;
+  background-color: #4e5340;
+  border-radius: 1rem;
+  border: none;
+  color: #e2e8dd;
+}
+#msg {
+  color: #e2e8dd;
+  font-size: 5vmin;
+}
+.msg-container {
+  height: 10vmin;
+}
+.hide {
+  display: none;
+}
+.bt-0 {
+  border-top: 0;
+}
+.bb-0 {
+  border-bottom: 0;
+}
+.bl-0 {
+  border-left: 0;
+}
+.br-0 {
+  border-right: 0;
+}
