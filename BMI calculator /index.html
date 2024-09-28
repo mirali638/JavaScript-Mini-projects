@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI calculator</title>
+    <link rel="stylesheet" href="p2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>BMI calculator</h2>
+      <form id="bmiForm">
+        <div class="height">
+          <p>Enter height in CM</p>
+          <input type="text" id="height" />
+        </div>
+        <div class="weight">
+          <p>Enter weight in KG</p>
+          <input type="text" id="weight" />
+        </div>
+        <button type="submit">Calculate</button>
+      </form>
+      <div id="resultBox" class="box">
+        <h4>BMI Result</h4>
+        <div id="result" class="result"></div>
+      </div>
+      <div id="guideBox" class="box">
+        <h4>BMI Weight Guide</h4>
+        <div id="weight_guide" class="weight_guide"></div>
+      </div>
+    </div>
+    <script src="p2.js"></script>
+  </body>
+</html>
 
