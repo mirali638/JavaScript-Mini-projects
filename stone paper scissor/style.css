@@ -53,4 +53,8 @@ img {
 .msg-container {
   padding-top: 3rem;
 }
-
+@media(max-width:450px){
+  .choices{
+    flex-wrap: wrap;
+  }
+}
